@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Blog - eMotoTitle</title>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-container-low": "#eff1f2",
+              "surface-container-lowest": "#ffffff",
+              "primary-fixed": "#6c9fff",
+              "primary-dim": "#004da4",
+              "surface-dim": "#d1d5d7",
+              "surface-variant": "#dadddf",
+              "on-primary-fixed-variant": "#002a60",
+              "primary-container": "#6c9fff",
+              "primary-fixed-dim": "#5091ff",
+              "outline": "#757778",
+              "on-primary-fixed": "#000000",
+              "on-error": "#ffefee",
+              "background": "#f5f6f7",
+              "inverse-on-surface": "#9b9d9e",
+              "on-surface": "#2c2f30",
+              "error-dim": "#9f0519",
+              "on-background": "#2c2f30",
+              "on-secondary-fixed": "#2b3d4f",
+              "surface-container": "#e6e8ea",
+              "secondary-dim": "#3f5164",
+              "on-secondary": "#ecf3ff",
+              "surface-tint": "#0058ba",
+              "tertiary-dim": "#00595b",
+              "surface-container-high": "#e0e3e4",
+              "on-tertiary-container": "#005d5f",
+              "error-container": "#fb5151",
+              "outline-variant": "#abadae",
+              "tertiary-container": "#5dfbfe",
+              "on-secondary-container": "#3e5063",
+              "tertiary-fixed-dim": "#4aedef",
+              "on-primary": "#f0f2ff",
+              "inverse-primary": "#4a8eff",
+              "secondary-fixed-dim": "#bed1e7",
+              "surface": "#f5f6f7",
+              "primary": "#0058ba",
+              "on-tertiary-fixed": "#00494a",
+              "on-tertiary": "#befeff",
+              "error": "#b31b25",
+              "on-primary-container": "#00214e",
+              "on-surface-variant": "#595c5d",
+              "secondary-container": "#ccdff6",
+              "on-tertiary-fixed-variant": "#00686a",
+              "on-secondary-fixed-variant": "#485a6d",
+              "surface-bright": "#f5f6f7",
+              "on-error-container": "#570008",
+              "tertiary-fixed": "#5dfbfe",
+              "tertiary": "#006668",
+              "secondary": "#4b5d70",
+              "secondary-fixed": "#ccdff6",
+              "inverse-surface": "#0c0f10",
+              "surface-container-highest": "#dadddf"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .glass-card {
+        background: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(12px);
+      }
+      .primary-gradient {
+        background: linear-gradient(135deg, #0058ba 0%, #6c9fff 100%);
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background font-body text-on-background selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md shadow-sm dark:shadow-none">
+<div class="flex items-center justify-between px-6 py-4 max-w-7xl mx-auto">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-blue-700 dark:text-blue-400" data-icon="electric_bolt">electric_bolt</span>
+<span class="text-2xl font-black text-slate-900 dark:text-white tracking-tighter font-headline">eMotoTitle</span>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-slate-600 dark:text-slate-400 hover:text-blue-600 font-['Inter'] text-sm transition-colors" href="#">How it Works</a>
+<a class="text-blue-600 dark:text-blue-400 font-semibold font-['Inter'] text-sm" href="#">Blog</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-blue-600 font-['Inter'] text-sm transition-colors" href="#">Pricing</a>
+</nav>
+<button class="primary-gradient text-on-primary px-6 py-2.5 rounded-xl font-semibold tracking-tight active:scale-95 duration-200 transition-all shadow-lg shadow-primary/20">
+                Get Started
+            </button>
+</div>
+</header>
+<main class="pt-24 pb-20">
+<!-- Hero Section -->
+<section class="max-w-7xl mx-auto px-8 py-16 md:py-24 overflow-hidden">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-7">
+<span class="inline-block px-4 py-1.5 rounded-full bg-secondary-container text-on-secondary-container text-xs font-bold tracking-widest uppercase mb-6">Electric Insights</span>
+<h1 class="font-headline text-5xl md:text-7xl font-extrabold text-on-surface tracking-tighter leading-[1.1] mb-8">
+                        The Future of <span class="text-primary italic">E-Mobility</span> Compliance.
+                    </h1>
+<p class="text-lg md:text-xl text-on-surface-variant max-w-xl leading-relaxed">
+                        Stay ahead of evolving regulations and optimize your electric ride's legal standing with professional insights from our industry experts.
+                    </p>
+</div>
+<div class="lg:col-span-5 relative">
+<div class="aspect-[4/5] rounded-xl overflow-hidden shadow-2xl rotate-3 hover:rotate-0 transition-transform duration-500">
+<img alt="Sleek modern electric bike" class="w-full h-full object-cover" data-alt="Close-up of a premium matte black electric bike frame with integrated lighting and high-tech components in a minimalist studio setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdKl09KQ8Dh8GZVvSO0K7nMoGebKYHpxzR14RzUxrpt5_4HahFKYhDZ2yDZYso9taR09ybHCciIY-96Y5WlNUnFW7p8DRZifPKkYlnTc3lqPisv5uGdcchyhs2bN7TIXwvqF3rbBpr8W7_564YjMtaSHUrUy5jjHtdloV5jmlFZUTkLOxgl1lyU9CiWW05t_yqlcRET97JjgkOAYA1WoLbhxDvb59pG_pXs4RWXzvTLOngK0s8wzrg4SDBMCKLYDtsu1kU3rxNJsIH"/>
+</div>
+<div class="absolute -bottom-6 -left-6 glass-card p-6 rounded-xl border border-white/20 shadow-xl hidden md:block">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-tertiary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-on-tertiary-container" data-icon="verified">verified</span>
+</div>
+<div>
+<p class="text-xs font-bold text-on-surface-variant uppercase tracking-widest">Industry Pulse</p>
+<p class="text-sm font-bold text-on-surface">2026 Compliance Ready</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured News Section (Bento Grid) -->
+<section class="max-w-7xl mx-auto px-8 py-12">
+<div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-4">
+<div>
+<h2 class="font-headline text-3xl font-extrabold text-on-surface">Latest News</h2>
+<p class="text-on-surface-variant">Timely updates on laws, tech, and security.</p>
+</div>
+<div class="flex gap-2">
+<button class="p-3 rounded-full bg-surface-container-high hover:bg-surface-container-highest transition-colors">
+<span class="material-symbols-outlined leading-none" data-icon="arrow_back">arrow_back</span>
+</button>
+<button class="p-3 rounded-full bg-primary text-on-primary hover:bg-primary-dim transition-colors">
+<span class="material-symbols-outlined leading-none" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-12 gap-6">
+<!-- Main Featured Post -->
+<div class="md:col-span-4 lg:col-span-8 group cursor-pointer">
+<div class="relative h-[500px] rounded-xl overflow-hidden mb-6">
+<img alt="E-bike on city street" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Wide shot of a modern electric bicycle parked on a clean urban cobblestone street during blue hour with soft city lights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQcY1_wSzuD9iK_3Smm0lGCkoab-vdLnO6Mh97FwlWVU-A-pik_U-ySUqO14h3C0BkywDzlgtzx4zIps0o54BdEbuhu2Qg6wEYVWXB67i2hu3SXuUOCb1W1ex3hbFkGBzulxwxs4Fyltjxb21jS_w4vxzPlwXG257VC9WU3J9VmNicCy9XkepmJmfKDRIHE1b2PdEIWvGEFo-ittAZcDWmXDREmxLklSlN7t_ez7WYnxjpoEA39wBZ1A0Bj7BvoQKqFeFG7o-QBTfv"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+<div class="absolute bottom-0 p-8">
+<span class="px-3 py-1 bg-primary-container text-on-primary-container text-xs font-bold rounded-lg mb-4 inline-block">LEGAL UPDATE</span>
+<h3 class="text-3xl font-bold text-white mb-4 group-hover:underline decoration-primary">New E-Bike Registration Laws in 2026</h3>
+<p class="text-white/80 max-w-lg mb-6">Everything you need to know about the upcoming federal mandates and how to stay compliant before the deadline.</p>
+<div class="flex items-center gap-4 text-white/60 text-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm" data-icon="calendar_today">calendar_today</span> Oct 12, 2024</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm" data-icon="schedule">schedule</span> 8 min read</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Secondary Post -->
+<div class="md:col-span-4 lg:col-span-4 flex flex-col gap-6">
+<div class="bg-surface-container-low p-6 rounded-xl hover:bg-surface-container transition-colors group cursor-pointer">
+<div class="aspect-video rounded-lg overflow-hidden mb-4">
+<img alt="Bike lock security" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Close-up of a high-security heavy-duty U-lock securing an e-bike wheel in a stylish urban environment with soft bokeh" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAo_uj0TMQi_WEbqb8DpMVH4MN2t5Bh8k5vHR1R15bIaNXANXvPPhFx5tJW21ZLjGeSA31Rk8UgAlOcJ44G2ogtJ_BT7xczqiCJR1u7cxp-wmTxjdaSF5A8zVzl6I33nhOvgDTrYkjeTF4SwOAmrGFbD9ckrqXK_LXztuFkvBmhEtrMUhedKJJWJMXJKIrRhkkG_ob78XADaFcZKXtv4_bzntyKG_hmgrw86bewfqt-xtG04dWno9aGi06tNUefKo2jeV7E35mAwLgW"/>
+</div>
+<h4 class="font-bold text-xl mb-3 group-hover:text-primary transition-colors">How to Secure Your Electric Ride</h4>
+<p class="text-on-surface-variant text-sm mb-4">Protect your investment with the latest GPS tracking and physical locking technologies.</p>
+<div class="flex items-center justify-between">
+<span class="text-xs font-bold text-on-surface-variant uppercase tracking-widest">Guide</span>
+<span class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform" data-icon="east">east</span>
+</div>
+</div>
+<div class="bg-white border border-outline-variant/15 p-6 rounded-xl hover:shadow-xl transition-all group cursor-pointer">
+<div class="flex items-start justify-between mb-4">
+<span class="px-2 py-1 bg-tertiary-container text-on-tertiary-container text-[10px] font-black rounded-md">TECH</span>
+<span class="material-symbols-outlined text-on-surface-variant" data-icon="bookmark">bookmark</span>
+</div>
+<h4 class="font-bold text-lg mb-2">Battery Health: Winter Storage Tips</h4>
+<p class="text-on-surface-variant text-sm">Learn the optimal charge levels for long-term storage during the cold months.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter / CTA Asymmetric Section -->
+<section class="max-w-7xl mx-auto px-8 py-20">
+<div class="relative bg-on-surface rounded-3xl overflow-hidden p-8 md:p-16">
+<!-- Background Decoration -->
+<div class="absolute top-0 right-0 w-1/2 h-full bg-primary/10 -skew-x-12 translate-x-1/4"></div>
+<div class="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div>
+<h2 class="font-headline text-4xl font-extrabold text-white mb-6">Never miss a legislative update.</h2>
+<p class="text-white/60 text-lg mb-8">Join 15,000+ e-bike owners receiving our bi-weekly dispatch on law changes, safety tips, and exclusive registration discounts.</p>
+<form class="flex flex-col sm:flex-row gap-3">
+<input class="flex-grow bg-white/5 border border-white/10 rounded-xl px-6 py-4 text-white focus:outline-none focus:border-primary transition-colors placeholder:text-white/30" placeholder="Enter your email" type="email"/>
+<button class="primary-gradient text-on-primary px-8 py-4 rounded-xl font-bold whitespace-nowrap hover:shadow-lg hover:shadow-primary/40 transition-all">Subscribe Now</button>
+</form>
+</div>
+<div class="hidden lg:block">
+<div class="grid grid-cols-2 gap-4">
+<div class="h-40 bg-white/5 rounded-2xl flex flex-col items-center justify-center p-6 text-center">
+<span class="material-symbols-outlined text-primary mb-2 text-3xl" data-icon="notifications_active">notifications_active</span>
+<p class="text-white font-bold text-sm leading-tight">Instant Law Alerts</p>
+</div>
+<div class="h-40 bg-white/5 rounded-2xl flex flex-col items-center justify-center p-6 text-center translate-y-8">
+<span class="material-symbols-outlined text-primary mb-2 text-3xl" data-icon="verified_user">verified_user</span>
+<p class="text-white font-bold text-sm leading-tight">Expert Verified</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- More Articles - Simple Tonal Grid -->
+<section class="max-w-7xl mx-auto px-8 py-12">
+<h3 class="font-headline text-2xl font-bold mb-8">More from the Concierge</h3>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<div class="space-y-4 group cursor-pointer">
+<div class="aspect-video bg-surface-container rounded-xl overflow-hidden">
+<img alt="Digital gradient" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Soft ethereal gradient of electric blue and deep indigo with subtle digital grain texture and soft lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCF5hCBjKb8wYeeQJ3CA8Yp-TKa55_PAvuuIaXGyqM-hN0GqBCJthByBDdWkNymfIvEQe-sT48pK4XPdVBKJYxvSXdFcYC9BjXed2S3iqrNdlUWIw3KS-3xTd0-kiyePcp68cqVEX_iBVHpRtBTcLZFLwW38EnLd9fxmMmbdo9LD5vQSr-kJ8C-HfeT08Ozi6KTcfvdXw55MuzBGeDbf0LPu5m_17zwY1xNfOcju-ldn8_bdx7ZdC2Cd_oUElBab22bAfgx918eF25r"/>
+</div>
+<div>
+<p class="text-primary text-xs font-bold uppercase tracking-widest mb-2">Digital Titles</p>
+<h4 class="font-bold text-lg group-hover:text-primary transition-colors">The Paperless Revolution: Digital Registration Benefits</h4>
+<p class="text-on-surface-variant text-sm">Why 45 states are moving toward blockchain-verified e-bike titles.</p>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="space-y-4 group cursor-pointer">
+<div class="aspect-video bg-surface-container rounded-xl overflow-hidden">
+<img alt="Night city lights" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Dynamic shot of city lights at night with long exposure light trails from traffic reflecting on metallic surfaces" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9SkQb0Rg_dXJHBY1Urj1L_ukScAPG_vKDfACUNtQMF5vMl8MloL9YvD1Usjv8sXmge_4gIexiPRDfFpjIQ7Ku979cSQyLilr6OkDdHredteSYuBtZoU03RYTQ87kXhKI22VJN51RSrUa1Ou-Gyg5DG3nxkRdpbvhTtq_mKqsrLXbi1d7YD1DU7R1K3slfeIDArSVrxAOy47rso4vyM7xfw0qI_v5ENOvSF-mR4efTMWHmUVXn2X6GfX1RiHjFmWcUVSQre_w2mtwc"/>
+</div>
+<div>
+<p class="text-primary text-xs font-bold uppercase tracking-widest mb-2">Safety</p>
+<h4 class="font-bold text-lg group-hover:text-primary transition-colors">Top 5 Smart Helmets for Commuters</h4>
+<p class="text-on-surface-variant text-sm">Integrated turn signals, MIPS protection, and Bluetooth connectivity reviewed.</p>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="space-y-4 group cursor-pointer">
+<div class="aspect-video bg-surface-container rounded-xl overflow-hidden">
+<img alt="Circuit board" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Futuristic close-up of a circuit board with glowing blue power lines representing electric vehicle technology" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0KcEIr6QXhany6M82PsRod_j_wJ7wutLxr49toG0bdkkc9wufZoDUW8EuVtj7jIQEg9Mut0V9T8EzIm3U0Ku2vhGxuvmSKWaZYO7lH6J9nnKm2FGEDDsGLJB61LVnqOMdUlmNl6FMa1piltl6w0a7oivbvwIf26e7xzEnxzCxb2Men5DOIjuxv6t1dEssSyHtO-muBWyrEA90W43D5OjG3aSzSYJe0YK99sIPqAkNpggq7vrxUMgonvjCf6xWvja4e-hx6BBRKIpd"/>
+</div>
+<div>
+<p class="text-primary text-xs font-bold uppercase tracking-widest mb-2">Infrastructure</p>
+<h4 class="font-bold text-lg group-hover:text-primary transition-colors">Charging Networks: The 2024 Expansion Map</h4>
+<p class="text-on-surface-variant text-sm">New municipal charging hubs are popping up across the West Coast.</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full rounded-t-3xl bg-slate-50 dark:bg-slate-950 no-border bg-white dark:bg-slate-900 mt-20">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 px-8 py-12 max-w-7xl mx-auto">
+<div>
+<div class="flex items-center gap-2 mb-6">
+<span class="material-symbols-outlined text-blue-700 dark:text-blue-400" data-icon="electric_bolt">electric_bolt</span>
+<span class="font-['Manrope'] font-extrabold text-lg text-slate-900 dark:text-white">eMotoTitle</span>
+</div>
+<p class="font-['Inter'] text-sm text-slate-500 dark:text-slate-400 max-w-sm mb-8">
+                    The Electric Concierge for E-Bike Registration. We simplify the legal hurdles so you can focus on the ride.
+                </p>
+<p class="font-['Inter'] text-sm text-slate-500 dark:text-slate-400">
+                    © 2024 emototitleservice.com. All rights reserved.
+                </p>
+</div>
+<div class="grid grid-cols-2 gap-8">
+<div>
+<h5 class="font-bold text-slate-900 dark:text-white mb-4 text-sm uppercase tracking-widest">Service</h5>
+<ul class="space-y-3">
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-blue-600 transition-all text-sm cursor-pointer" href="#">How it Works</a></li>
+<li><a class="text-blue-600 dark:text-blue-400 underline underline-offset-4 text-sm cursor-pointer" href="#">Pricing</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-blue-600 transition-all text-sm cursor-pointer" href="#">Support</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-bold text-slate-900 dark:text-white mb-4 text-sm uppercase tracking-widest">Legal</h5>
+<ul class="space-y-3">
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-blue-600 transition-all text-sm cursor-pointer" href="#">Privacy Policy</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-blue-600 transition-all text-sm cursor-pointer" href="#">Terms of Service</a></li>
+</ul>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

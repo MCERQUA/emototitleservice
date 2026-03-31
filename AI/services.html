@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Pricing &amp; Services | eMotoTitle</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface": "#f5f6f7",
+            "inverse-primary": "#4a8eff",
+            "on-tertiary": "#befeff",
+            "secondary-container": "#ccdff6",
+            "tertiary-fixed": "#5dfbfe",
+            "surface-dim": "#d1d5d7",
+            "on-secondary-fixed": "#2b3d4f",
+            "tertiary-dim": "#00595b",
+            "on-background": "#2c2f30",
+            "surface-bright": "#f5f6f7",
+            "primary": "#0058ba",
+            "tertiary-fixed-dim": "#4aedef",
+            "on-tertiary-fixed": "#00494a",
+            "surface-container-highest": "#dadddf",
+            "on-surface": "#2c2f30",
+            "on-primary": "#f0f2ff",
+            "primary-fixed-dim": "#5091ff",
+            "outline-variant": "#abadae",
+            "on-tertiary-fixed-variant": "#00686a",
+            "background": "#f5f6f7",
+            "tertiary-container": "#5dfbfe",
+            "tertiary": "#006668",
+            "surface-container-lowest": "#ffffff",
+            "secondary-dim": "#3f5164",
+            "primary-dim": "#004da4",
+            "on-secondary-fixed-variant": "#485a6d",
+            "surface-container-high": "#e0e3e4",
+            "on-tertiary-container": "#005d5f",
+            "primary-fixed": "#6c9fff",
+            "secondary": "#4b5d70",
+            "surface-variant": "#dadddf",
+            "error": "#b31b25",
+            "on-secondary-container": "#3e5063",
+            "error-container": "#fb5151",
+            "outline": "#757778",
+            "error-dim": "#9f0519",
+            "secondary-fixed-dim": "#bed1e7",
+            "on-error": "#ffefee",
+            "surface-tint": "#0058ba",
+            "on-primary-container": "#00214e",
+            "inverse-surface": "#0c0f10",
+            "on-surface-variant": "#595c5d",
+            "on-primary-fixed-variant": "#002a60",
+            "primary-container": "#6c9fff",
+            "surface-container-low": "#eff1f2",
+            "surface-container": "#e6e8ea",
+            "on-secondary": "#ecf3ff",
+            "inverse-on-surface": "#9b9d9e",
+            "secondary-fixed": "#ccdff6",
+            "on-primary-fixed": "#000000",
+            "on-error-container": "#570008"
+          },
+          fontFamily: {
+            "headline": ["Manrope"],
+            "body": ["Inter"],
+            "label": ["Inter"]
+          },
+          borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+        },
+      },
+    }
+  </script>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .bg-signature-gradient, .signature-gradient {
+      background: linear-gradient(135deg, #0058ba 0%, #6c9fff 100%);
+    }
+    .mobile-menu { display: none; }
+    .mobile-menu.active { display: flex; }
+  </style>
+</head>
+<body class="bg-surface font-body text-on-surface antialiased">
+
+<!-- Navigation -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md shadow-sm">
+  <div class="flex items-center justify-between px-6 py-4 max-w-7xl mx-auto">
+    <a href="index.html" class="flex items-center gap-2">
+      <span class="material-symbols-outlined text-blue-700 text-3xl">electric_bolt</span>
+      <span class="text-2xl font-black text-slate-900 tracking-tighter font-headline">eMotoTitle</span>
+    </a>
+    <div class="hidden md:flex items-center gap-8">
+      <a class="text-slate-600 hover:text-blue-600 transition-colors font-headline" href="index.html">Home</a>
+      <a class="text-blue-600 font-semibold font-headline" href="services.html">Pricing</a>
+      <a class="text-slate-600 hover:text-blue-600 transition-colors font-headline" href="blog.html">Blog</a>
+      <a class="text-slate-600 hover:text-blue-600 transition-colors font-headline" href="contact.html">Contact</a>
+      <a class="bg-signature-gradient text-on-primary px-6 py-2 rounded-xl font-bold active:scale-95 duration-200 transition-all" href="services.html">Get Started</a>
+    </div>
+    <button class="md:hidden text-slate-900" onclick="document.getElementById('mobileMenu').classList.toggle('active')">
+      <span class="material-symbols-outlined">menu</span>
+    </button>
+  </div>
+  <div id="mobileMenu" class="mobile-menu flex-col gap-4 px-6 pb-6 bg-white/95 backdrop-blur-md md:hidden">
+    <a class="text-slate-600 font-headline py-2" href="index.html">Home</a>
+    <a class="text-blue-600 font-semibold font-headline py-2" href="services.html">Pricing</a>
+    <a class="text-slate-600 font-headline py-2" href="blog.html">Blog</a>
+    <a class="text-slate-600 font-headline py-2" href="contact.html">Contact</a>
+    <a class="bg-signature-gradient text-on-primary px-6 py-2 rounded-xl font-bold text-center" href="services.html">Get Started</a>
+  </div>
+</nav>
+
+<main class="pt-32 pb-24 px-8 max-w-7xl mx-auto">
+  <!-- Hero Section -->
+  <section class="mb-20 text-center md:text-left">
+    <h1 class="font-headline font-extrabold text-5xl md:text-7xl text-on-surface tracking-tighter mb-6 leading-tight max-w-3xl">
+      Choose Your <span class="text-primary">Service</span>
+    </h1>
+    <p class="text-on-surface-variant text-xl max-w-2xl leading-relaxed">
+      Streamline your e-bike's legal documentation with our expert-led registration services. Simple, secure, and 100% digital.
+    </p>
+  </section>
+
+  <!-- Service Selection Grid -->
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
+    <!-- Basic Title Service Card -->
+    <div class="bg-surface-container-lowest rounded-xl p-8 md:p-12 flex flex-col justify-between transition-transform duration-300 hover:-translate-y-1 relative overflow-hidden group">
+      <div class="absolute top-0 right-0 p-6 opacity-10 group-hover:opacity-20 transition-opacity">
+        <span class="material-symbols-outlined text-9xl">description</span>
+      </div>
+      <div>
+        <div class="inline-flex items-center justify-center w-12 h-12 rounded-lg bg-surface-container mb-8">
+          <span class="material-symbols-outlined text-primary">bolt</span>
+        </div>
+        <h2 class="font-headline font-bold text-3xl mb-4">Basic Title Service</h2>
+        <p class="text-on-surface-variant text-lg mb-8 leading-relaxed">
+          Essential title application support for your e-bike. Fast and reliable support for owners who already have local registration under control.
+        </p>
+        <div class="space-y-4 mb-12">
+          <div class="flex items-center gap-3">
+            <span class="material-symbols-outlined text-tertiary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+            <span class="font-medium">100% Digital Submission</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <span class="material-symbols-outlined text-tertiary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+            <span class="font-medium">Expert Document Review</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <span class="material-symbols-outlined text-tertiary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+            <span class="font-medium">Standard Tracking Included</span>
+          </div>
+        </div>
+      </div>
+      <div class="mt-auto">
+        <div class="flex items-baseline gap-1 mb-8">
+          <span class="text-4xl font-extrabold">$49</span>
+          <span class="text-on-surface-variant font-medium">/ per e-bike</span>
+        </div>
+        <button class="w-full py-4 bg-surface-container-highest text-primary font-bold rounded-xl hover:bg-secondary-container transition-all active:scale-[0.98]">
+          Select Basic Service
+        </button>
+      </div>
+    </div>
+
+    <!-- Premium Title & Registration Card -->
+    <div class="bg-surface-container-lowest rounded-xl p-8 md:p-12 flex flex-col justify-between transition-transform duration-300 hover:-translate-y-1 relative overflow-hidden ring-4 ring-primary-container/20">
+      <div class="absolute top-0 right-0 bg-primary text-on-primary px-6 py-2 font-bold text-sm rounded-bl-xl tracking-widest uppercase">
+        Most Popular
+      </div>
+      <div>
+        <div class="inline-flex items-center justify-center w-12 h-12 rounded-lg bg-primary-container/20 mb-8">
+          <span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">verified</span>
+        </div>
+        <h2 class="font-headline font-bold text-3xl mb-4">Premium Title &amp; Registration</h2>
+        <p class="text-on-surface-variant text-lg mb-8 leading-relaxed">
+          The complete package. We handle both title and state registration for you. Sit back and wait for your tags to arrive in the mail.
+        </p>
+        <div class="space-y-4 mb-12">
+          <div class="flex items-center gap-3">
+            <span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+            <span class="font-medium">All Basic Service Features</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+            <span class="font-medium">Full State Registration Handling</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+            <span class="font-medium">Priority Support &amp; Fast Tracking</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+            <span class="font-medium">Official License Plate Coordination</span>
+          </div>
+        </div>
+      </div>
+      <div class="mt-auto">
+        <div class="flex items-baseline gap-1 mb-8">
+          <span class="text-4xl font-extrabold text-primary">$99</span>
+          <span class="text-on-surface-variant font-medium">/ per e-bike</span>
+        </div>
+        <button class="w-full py-4 signature-gradient text-on-primary font-bold rounded-xl shadow-lg shadow-primary/20 active:scale-[0.98] transition-all">
+          Select Premium Service
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Trust Elements Bar -->
+  <section class="mt-20 flex flex-wrap justify-center gap-12 py-10 border-t border-outline-variant/10">
+    <div class="flex items-center gap-4">
+      <span class="material-symbols-outlined text-tertiary text-3xl">lock</span>
+      <div>
+        <p class="font-bold text-sm">Secure Payment</p>
+        <p class="text-on-surface-variant text-xs">256-bit SSL Encrypted</p>
+      </div>
+    </div>
+    <div class="flex items-center gap-4">
+      <span class="material-symbols-outlined text-tertiary text-3xl">assignment_return</span>
+      <div>
+        <p class="font-bold text-sm">Money-Back Guarantee</p>
+        <p class="text-on-surface-variant text-xs">Full refund within 30 days</p>
+      </div>
+    </div>
+    <div class="flex items-center gap-4">
+      <span class="material-symbols-outlined text-tertiary text-3xl">support_agent</span>
+      <div>
+        <p class="font-bold text-sm">Expert Support</p>
+        <p class="text-on-surface-variant text-xs">Dedicated US-based team</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Register Section -->
+  <section class="mt-32 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+    <div class="relative">
+      <div class="aspect-square rounded-2xl overflow-hidden shadow-2xl">
+        <img alt="Electric motorcycle" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJvynYXXGf4jgZLu3aFcr_7AW6Axs6SrIH6uPP9b3STqIrC7Qq5FkZMgWKOmoE0NvVyfVEpni_6iusXwB7k26c8YcQVDsTO_g4X9t2_EehZfI7ac2UVm23R8AKtFMC-DbWpSenPkCztrXG7cVBd67pm1HxL_SKNoojZeGn8pwWsbQKnnItrUuPhpy6d2llQ_wxNicYbyyHAtjvXsClyA2x1iuss6wHh48CqYr5NLOA3mSIWY5QEd4TYUGUDkBbaPPXQc-Pqzg1I3rd"/>
+      </div>
+      <div class="absolute -bottom-10 -right-6 md:-right-12 bg-white p-6 rounded-xl shadow-xl max-w-xs hidden sm:block">
+        <p class="font-headline font-bold text-lg mb-2">Did You Know?</p>
+        <p class="text-sm text-on-surface-variant">Over 40% of e-bike owners face fines for improper registration. We ensure your ride is fully legal.</p>
+      </div>
+    </div>
+    <div class="space-y-6">
+      <h3 class="font-headline font-bold text-4xl tracking-tight leading-snug">Why register with eMotoTitle?</h3>
+      <p class="text-on-surface-variant text-lg">We've spent years building relationships with state agencies to navigate the complex world of electric vehicle titles so you don't have to.</p>
+      <div class="grid grid-cols-1 gap-4 pt-4">
+        <div class="p-4 bg-surface-container-low rounded-lg flex items-start gap-4">
+          <span class="material-symbols-outlined text-primary mt-1">timer</span>
+          <p class="text-sm font-medium">Average processing time is 75% faster than manual applications.</p>
+        </div>
+        <div class="p-4 bg-surface-container-low rounded-lg flex items-start gap-4">
+          <span class="material-symbols-outlined text-primary mt-1">cloud_done</span>
+          <p class="text-sm font-medium">Auto-sync with your state's digital registry for instant updates.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- Footer -->
+<footer class="bg-slate-50 w-full rounded-t-3xl mt-20">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8 px-8 py-12 max-w-7xl mx-auto">
+    <div>
+      <a href="index.html" class="flex items-center gap-2 mb-6">
+        <span class="material-symbols-outlined text-blue-700" style="font-variation-settings: 'FILL' 1;">electric_bolt</span>
+        <span class="font-headline font-extrabold text-lg text-slate-900">eMotoTitle</span>
+      </a>
+      <p class="text-sm text-slate-500 max-w-sm mb-6">
+        &copy; 2024 emototitleservice.com. The Electric Concierge for E-Bike Registration.
+      </p>
+      <div class="flex gap-4">
+        <span class="material-symbols-outlined text-slate-400 hover:text-blue-600 cursor-pointer">share</span>
+        <span class="material-symbols-outlined text-slate-400 hover:text-blue-600 cursor-pointer">mail</span>
+      </div>
+    </div>
+    <div class="grid grid-cols-2 sm:grid-cols-3 gap-8">
+      <div class="space-y-4">
+        <p class="font-bold text-sm">Services</p>
+        <ul class="space-y-2 text-sm text-slate-500">
+          <li><a class="hover:text-blue-600 transition-all" href="index.html#how-it-works">How it Works</a></li>
+          <li><a class="text-blue-600 underline underline-offset-4" href="services.html">Pricing</a></li>
+          <li><a class="hover:text-blue-600 transition-all" href="contact.html">Support</a></li>
+        </ul>
+      </div>
+      <div class="space-y-4">
+        <p class="font-bold text-sm">Legal</p>
+        <ul class="space-y-2 text-sm text-slate-500">
+          <li><a class="hover:text-blue-600 transition-all" href="#">Privacy Policy</a></li>
+          <li><a class="hover:text-blue-600 transition-all" href="#">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>eMotoTitle Forms</title>
+</head>
+<body>
+  <!-- Netlify Form Detection: Contact Form -->
+  <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+    <input name="form-name" type="hidden" value="contact" />
+    <input name="bot-field" />
+    <input name="name" />
+    <input name="email" />
+    <select name="subject">
+      <option>Registration Status</option>
+      <option>Pricing &amp; Plans</option>
+      <option>Technical Support</option>
+      <option>Partnership Inquiry</option>
+    </select>
+    <textarea name="message"></textarea>
+  </form>
+
+  <!-- Netlify Form Detection: Newsletter -->
+  <form name="newsletter" netlify netlify-honeypot="bot-field" hidden>
+    <input name="form-name" type="hidden" value="newsletter" />
+    <input name="bot-field" />
+    <input name="email" />
+  </form>
+</body>
+</html>
