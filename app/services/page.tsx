@@ -7,7 +7,7 @@ import WhyRegister from '@/components/sections/services/WhyRegister'
 export const metadata: Metadata = {
   title: 'Pricing & Services',
   description:
-    'Choose your e-bike registration service. Basic Title Service from $49 or Premium Title & Registration from $99.',
+    'E-bike title service from $49. Includes lost title bond at 150% of bike value and eMoto insurance.',
 }
 
 export default function ServicesPage() {

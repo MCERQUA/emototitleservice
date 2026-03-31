@@ -4,19 +4,14 @@ const basicFeatures = [
   '100% Digital Submission',
   'Expert Document Review',
   'Standard Tracking Included',
-]
-
-const premiumFeatures = [
-  'All Basic Service Features',
-  'Full State Registration Handling',
-  'Priority Support & Fast Tracking',
-  'Official License Plate Coordination',
+  'Lost Title Bond (150% of Bike Value)',
+  'eMoto Insurance Available',
 ]
 
 export default function ServiceCards() {
   return (
     <section className="mb-16">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
+      <div className="grid grid-cols-1 lg:grid-cols-1 gap-8 items-stretch max-w-xl mx-auto">
         {/* Basic Card */}
         <div className="relative bg-surface-container-lowest rounded-xl p-8 flex flex-col overflow-hidden transition-transform duration-300 hover:-translate-y-1">
           {/* Decorative ghost icon */}
@@ -67,59 +62,6 @@ export default function ServiceCards() {
               className="block text-center bg-surface-container-highest text-primary font-bold py-3 px-6 rounded-xl transition-all duration-200 hover:opacity-90 active:scale-95"
             >
               Select Basic Service
-            </Link>
-          </div>
-        </div>
-
-        {/* Premium Card (Featured) */}
-        <div className="relative bg-surface-container-lowest rounded-xl p-8 flex flex-col overflow-hidden ring-4 ring-primary-container/20 transition-transform duration-300 hover:-translate-y-1">
-          {/* Most Popular badge */}
-          <span className="absolute top-4 right-4 bg-primary text-on-primary text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full z-20">
-            Most Popular
-          </span>
-
-          <div className="relative z-10 flex flex-col flex-1">
-            {/* Icon badge */}
-            <div className="mb-4 flex items-center justify-center w-12 h-12 rounded-xl bg-surface-container-high">
-              <span className="material-symbols-outlined filled text-primary text-2xl">
-                verified
-              </span>
-            </div>
-
-            <h2 className="font-headline text-2xl font-bold text-on-surface mb-2">
-              Premium Title &amp; Registration
-            </h2>
-            <p className="text-on-surface-variant mb-6">
-              The complete package. We handle both title and state registration
-              for you. Sit back and wait for your tags to arrive in the mail.
-            </p>
-
-            {/* Features */}
-            <ul className="space-y-3 mb-8">
-              {premiumFeatures.map((feature) => (
-                <li key={feature} className="flex items-center gap-2">
-                  <span className="material-symbols-outlined filled text-primary text-xl">
-                    check_circle
-                  </span>
-                  <span className="text-on-surface">{feature}</span>
-                </li>
-              ))}
-            </ul>
-
-            {/* Price */}
-            <div className="mt-auto mb-6">
-              <span className="text-3xl font-headline font-extrabold text-primary">
-                $99
-              </span>
-              <span className="text-on-surface-variant ml-1">/ per e-bike</span>
-            </div>
-
-            {/* CTA */}
-            <Link
-              href="/contact"
-              className="block text-center bg-signature-gradient text-on-primary font-bold py-3 px-6 rounded-xl shadow-lg transition-all duration-200 hover:opacity-90 active:scale-95"
-            >
-              Select Premium Service
             </Link>
           </div>
         </div>

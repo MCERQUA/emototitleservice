@@ -29,16 +29,8 @@ export const siteConfig = {
         '100% Digital Submission',
         'Expert Document Review',
         'Standard Tracking Included',
-      ],
-    },
-    premium: {
-      name: 'Premium Title & Registration',
-      price: 99,
-      features: [
-        'All Basic Service Features',
-        'Full State Registration Handling',
-        'Priority Support & Fast Tracking',
-        'Official License Plate Coordination',
+        'Lost Title Bond (150% of Bike Value)',
+        'eMoto Insurance Available',
       ],
     },
   },
