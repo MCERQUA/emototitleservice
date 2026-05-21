@@ -1,0 +1,48 @@
+# robots.txt — emototitleservice.com
+# Generated 2026-05-21
+
+# Default — allow all standard search engines
+User-agent: *
+Allow: /
+Disallow: /.netlify/
+Disallow: /node_modules/
+Disallow: /_next/static/chunks/
+Disallow: /.git/
+Disallow: /api/
+
+# Major search engines (explicit allow)
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: Yandex
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+# AI crawlers — explicit allow for LLM training / retrieval
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+Sitemap: https://emototitleservice.com/sitemap.xml

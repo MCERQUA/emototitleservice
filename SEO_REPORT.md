@@ -222,3 +222,21 @@ Date: 2026-05-21
 - Add per-page OG tags
 
 **Estimated SEO Potential**: With these fixes, expect 20-30% improvement in search visibility, reduced crawl waste, and better SERP appearance within 4-6 weeks.
+
+## Round 2 — repaired 2026-05-21
+- sitemap.xml: created at `/workspace/Websites/emototitleservice/public/sitemap.xml` with 4 URLs
+- robots.txt: created at `/workspace/Websites/emototitleservice/public/robots.txt`
+- Domain used: https://emototitleservice.com (detected from `config/site.config.ts` `siteConfig.url`, referenced in `app/layout.tsx` metadata)
+- Framework detected: Next.js 15.1.0 (App Router) — placed assets in `public/` so they serve at site root
+- Files changed:
+  - `public/sitemap.xml` (new)
+  - `public/robots.txt` (new)
+  - `SEO_REPORT.md` (this section appended)
+- URLs in sitemap:
+  - `/` — weekly / 1.0
+  - `/services` — monthly / 0.9
+  - `/blog` — monthly / 0.7
+  - `/contact` — monthly / 0.8
+- robots.txt highlights: explicit allow for Googlebot, Bingbot, DuckDuckBot, Slurp, Yandex, Baiduspider; AI-crawler allow for ClaudeBot, anthropic-ai, GPTBot, PerplexityBot, Google-Extended; disallows `/.netlify/`, `/node_modules/`, `/_next/static/chunks/`, `/.git/`, `/api/`; Sitemap reference to `https://emototitleservice.com/sitemap.xml`
+- Validation: sitemap.xml parsed clean via Python ElementTree; robots.txt clean (no syntax errors)
+- Note: `/privacy` and `/terms` referenced in footer but pages don't exist yet — intentionally excluded from sitemap until pages are built (per Round 1 issue #5)
