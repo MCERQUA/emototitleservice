@@ -240,3 +240,41 @@ Date: 2026-05-21
 - robots.txt highlights: explicit allow for Googlebot, Bingbot, DuckDuckBot, Slurp, Yandex, Baiduspider; AI-crawler allow for ClaudeBot, anthropic-ai, GPTBot, PerplexityBot, Google-Extended; disallows `/.netlify/`, `/node_modules/`, `/_next/static/chunks/`, `/.git/`, `/api/`; Sitemap reference to `https://emototitleservice.com/sitemap.xml`
 - Validation: sitemap.xml parsed clean via Python ElementTree; robots.txt clean (no syntax errors)
 - Note: `/privacy` and `/terms` referenced in footer but pages don't exist yet — intentionally excluded from sitemap until pages are built (per Round 1 issue #5)
+
+## Round 3 — repaired 2026-05-22
+
+Closed out the major Tier 2 SEO infrastructure gaps: structured data, per-page social tags, custom 404, and canonical hints. Real domain + Austin TX address from `config/site.config.ts` made every schema reference concrete (no placeholders).
+
+### Tier 2 results
+
+| Item | Status | Details |
+|------|--------|---------|
+| JSON-LD schema | ✅ applied | 4 schemas injected via `app/layout.tsx`: `Organization` (with email, contactPoint, `@id`), `LocalBusiness` (with full Austin TX `PostalAddress` from siteConfig), `Service` (with `provider` `@id` cross-reference and a real `Offer` priced at $49 for the Basic Title Service), `FAQPage` (5 Q&A covering the process, cost, timing, when titles are required, and required documents — sourced from `HowItWorks` component + service description) |
+| Open Graph (root) | ✅ already had partial; expanded | Added `metadataBase`, og:image (1200×630), and `images` array. Existing og:title/description/url/siteName/type retained |
+| Open Graph (per-page) | ✅ applied | `/services`, `/blog`, `/contact` each got their own `openGraph` block with title/description/url/type. Each also got an `alternates.canonical` relative path |
+| Twitter Card | ✅ applied | `summary_large_image` set at root with title/description/image; per-page overrides on `/services`, `/blog`, `/contact` with their unique title and description |
+| Canonical | ✅ applied | Root: `alternates.canonical = '/'` with `metadataBase`. Per-page: `/services`, `/blog`, `/contact` each have their own canonical |
+| Custom 404 page (HTTP 404) | ✅ applied | Created `app/not-found.tsx` — branded, with three CTAs (Home, Pricing, Contact). Build report shows `/_not-found` route prerendered as static |
+| Robots meta | ✅ enhanced | Added `googleBot` overrides for `max-image-preview: large` and unbounded `max-snippet` |
+| Image alt-text ≥ 90% | ⏭️ already at 100% | No changes needed (Round 1 baseline) |
+| Page titles refined | ✅ applied | `/services`: "Pricing & Services" → "E-Bike Title Service & Registration | $49"; `/blog`: "Blog" → "E-Bike Compliance & Registration News". Keywords now in titles instead of being generic |
+
+### Files changed
+
+- `app/layout.tsx` — full metadata rewrite + 4 JSON-LD schemas
+- `app/services/page.tsx` — title rewrite + OG/Twitter/canonical
+- `app/blog/page.tsx` — title rewrite + OG/Twitter/canonical
+- `app/contact/page.tsx` — OG/Twitter/canonical
+- `app/not-found.tsx` (**new**) — branded 404 page
+
+### Build verification
+
+- `npm install` clean
+- `npm run build` → 7 pages built (4 routes + _not-found + 2 internal). All prerendered as static content. No TypeScript or lint errors
+
+### Round 4 deferrals
+
+- Broken blog article links (FeaturedPosts/MoreArticles `href="#"`) — needs blog content infrastructure, out of scope for SEO repair
+- `/privacy` and `/terms` pages — still missing; legal-page authorship is out of scope
+- Real OG image asset (`og-default.jpg`) and logo (`logo.png`) referenced but not yet produced
+- Blog dynamic routes (`/blog/[slug]`)
