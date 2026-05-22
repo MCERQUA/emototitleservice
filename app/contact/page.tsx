@@ -7,6 +7,20 @@ export const metadata: Metadata = {
   title: 'Contact Us',
   description:
     'Get in touch with the eMotoTitle team. Email support, business address, and contact form for e-bike registration inquiries.',
+  alternates: { canonical: '/contact' },
+  openGraph: {
+    title: 'Contact eMotoTitle',
+    description:
+      'Reach the eMotoTitle team — email support, Austin TX headquarters, and contact form for e-bike registration questions.',
+    url: '/contact',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Contact eMotoTitle',
+    description:
+      'Email support, business address, and contact form for e-bike registration inquiries.',
+  },
 }
 
 export default function ContactPage() {
