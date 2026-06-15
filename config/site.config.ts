@@ -6,7 +6,7 @@ export const siteConfig = {
   url: 'https://emototitleservice.com',
   email: 'support@emototitleservice.com',
   address: {
-    name: 'VoltFlow Tech Hub',
+    name: 'eMotoTitle Service Center',
     street: '88 Electric Avenue, Suite 400',
     city: 'Austin',
     state: 'TX',

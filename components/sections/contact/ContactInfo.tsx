@@ -33,7 +33,7 @@ export default function ContactInfo() {
           Business Address
         </h3>
         <p className="text-on-surface-variant leading-relaxed whitespace-pre-line">
-          {'VoltFlow Tech Hub\n88 Electric Avenue, Suite 400\nAustin, TX 78701'}
+          {'eMotoTitle Service Center\n88 Electric Avenue, Suite 400\nAustin, TX 78701'}
         </p>
       </div>
 
