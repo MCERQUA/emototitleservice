@@ -5,6 +5,11 @@
   command = "pnpm run build"
   publish = ".next"
 
+[[notifications]]
+  event = "submission_created"
+  url = "https://josh.jam-bot.com/social-api/api/leads/webhook/netlify?tenant=josh&site=emototitleservice.com"
+  form = "contact"
+
 [[headers]]
   for = "/*"
   [headers.values]
