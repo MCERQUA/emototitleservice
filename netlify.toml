@@ -38,8 +38,3 @@
   to = "/sitemap.xml"
   status = 301
 
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
-  conditions = {Role = ["admin"]}
