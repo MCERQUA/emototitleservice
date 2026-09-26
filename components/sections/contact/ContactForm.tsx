@@ -10,12 +10,18 @@ export default function ContactForm() {
     const form = e.currentTarget
     const formData = new FormData(form)
 
-    fetch('/', {
+    // POST to the static /__forms.html, not '/': on Netlify's Next runtime a POST to a
+    // page path is answered by the route cache before Netlify Forms runs, so the browser
+    // gets 200 and the submission is discarded.
+    fetch('/__forms.html', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: new URLSearchParams(formData as unknown as Record<string, string>).toString(),
     })
-      .then(() => setSubmitted(true))
+      .then((res) => {
+        if (!res.ok) throw new Error(`form submit failed: ${res.status}`)
+        setSubmitted(true)
+      })
       .catch((err) => console.error(err))
   }
 
