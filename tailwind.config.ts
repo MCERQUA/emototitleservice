@@ -8,6 +8,10 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        // @tailwindcss/forms paints focus rings and checkbox/radio fills with theme blue.600
+        // (a blue). No blue-* utilities are used on this site, so point that one shade at the
+        // warm orange-700 (#c2410c) and the plugin output carries no blue.
+        blue: { 600: '#c2410c' },
         primary: {
           DEFAULT: '#964313',
           dim: '#843B10',

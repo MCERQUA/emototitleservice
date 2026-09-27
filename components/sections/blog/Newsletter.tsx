@@ -38,7 +38,7 @@ export default function Newsletter() {
               <h2 className="font-headline text-3xl md:text-4xl font-extrabold text-white leading-tight">
                 Never miss a legislative update.
               </h2>
-              <p className="text-slate-300 text-lg max-w-md leading-relaxed">
+              <p className="text-stone-300 text-lg max-w-md leading-relaxed">
                 Join 15,000+ e-bike owners who stay informed on regulation
                 changes, safety recalls, and industry milestones.
               </p>
@@ -72,7 +72,7 @@ export default function Newsletter() {
                     name="email"
                     placeholder="Your email address"
                     required
-                    className="flex-1 px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                    className="flex-1 px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder:text-stone-400 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
                   />
                   <button
                     type="submit"
@@ -93,7 +93,7 @@ export default function Newsletter() {
                 <h3 className="font-headline font-bold text-white text-lg">
                   Instant Law Alerts
                 </h3>
-                <p className="text-sm text-slate-400">
+                <p className="text-sm text-stone-400">
                   Get notified the moment new regulations are proposed or enacted
                   in your state.
                 </p>
@@ -105,7 +105,7 @@ export default function Newsletter() {
                 <h3 className="font-headline font-bold text-white text-lg">
                   Expert Verified
                 </h3>
-                <p className="text-sm text-slate-400">
+                <p className="text-sm text-stone-400">
                   Every article is reviewed by compliance professionals before
                   publication.
                 </p>

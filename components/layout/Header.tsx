@@ -22,7 +22,7 @@ export default function Header() {
           <span className="material-symbols-outlined text-orange-800 text-3xl filled">
             electric_bolt
           </span>
-          <span className="text-2xl font-black text-slate-900 tracking-tighter font-headline">
+          <span className="text-2xl font-black text-stone-900 tracking-tighter font-headline">
             {siteConfig.name}
           </span>
         </Link>
@@ -37,7 +37,7 @@ export default function Header() {
                 'font-headline transition-colors',
                 isActive(item.href)
                   ? 'text-orange-700 font-semibold'
-                  : 'text-slate-600 hover:text-orange-700'
+                  : 'text-stone-600 hover:text-orange-700'
               )}
             >
               {item.label}
@@ -53,7 +53,7 @@ export default function Header() {
 
         {/* Mobile Toggle */}
         <button
-          className="md:hidden text-slate-900 p-2 hover:bg-orange-50 rounded-lg"
+          className="md:hidden text-stone-900 p-2 hover:bg-orange-50 rounded-lg"
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label="Toggle menu"
         >
@@ -79,7 +79,7 @@ export default function Header() {
               'font-headline py-2',
               isActive(item.href)
                 ? 'text-orange-700 font-semibold'
-                : 'text-slate-600'
+                : 'text-stone-600'
             )}
           >
             {item.label}

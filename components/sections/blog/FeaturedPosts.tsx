@@ -54,11 +54,11 @@ export default function FeaturedPosts() {
               <h3 className="font-headline text-2xl md:text-3xl font-extrabold text-white leading-tight">
                 New E-Bike Registration Laws in 2026
               </h3>
-              <p className="text-slate-300 max-w-lg">
+              <p className="text-stone-300 max-w-lg">
                 Everything you need to know about the upcoming federal
                 mandates...
               </p>
-              <div className="flex items-center gap-4 text-sm text-slate-400">
+              <div className="flex items-center gap-4 text-sm text-stone-400">
                 <span className="flex items-center gap-1">
                   <span className="material-symbols-outlined text-base">
                     calendar_today

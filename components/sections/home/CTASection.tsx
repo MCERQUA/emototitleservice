@@ -4,7 +4,7 @@ export default function CTASection() {
   return (
     <section className="py-12">
       <div className="container-site">
-        <div className="relative bg-slate-900 rounded-[3rem] px-8 py-16 md:py-24 overflow-hidden">
+        <div className="relative bg-stone-900 rounded-[3rem] px-8 py-16 md:py-24 overflow-hidden">
           {/* Dotted background pattern */}
           <div
             className="absolute inset-0 opacity-10 pointer-events-none"
@@ -20,7 +20,7 @@ export default function CTASection() {
               Ready to ride legal?
             </h2>
 
-            <p className="text-lg text-slate-300 leading-relaxed">
+            <p className="text-lg text-stone-300 leading-relaxed">
               Get started today and have your title application filed by tomorrow
               morning.
             </p>
