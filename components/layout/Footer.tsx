@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 px-8 py-12 max-w-7xl mx-auto">
         <div className="space-y-6">
           <Link href="/" className="flex items-center gap-2">
-            <span className="material-symbols-outlined text-blue-700 filled">
+            <span className="material-symbols-outlined text-orange-800 filled">
               electric_bolt
             </span>
             <span className="font-headline font-extrabold text-xl text-slate-900">
@@ -31,7 +31,7 @@ export default function Footer() {
                   <Link
                     key={link.href}
                     href={link.href}
-                    className="text-sm text-slate-500 hover:text-blue-600 transition-all"
+                    className="text-sm text-slate-500 hover:text-orange-700 transition-all"
                   >
                     {link.label}
                   </Link>

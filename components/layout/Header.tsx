@@ -19,7 +19,7 @@ export default function Header() {
     <nav className="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md shadow-sm">
       <div className="flex items-center justify-between px-6 py-4 max-w-7xl mx-auto">
         <Link href="/" className="flex items-center gap-2">
-          <span className="material-symbols-outlined text-blue-700 text-3xl filled">
+          <span className="material-symbols-outlined text-orange-800 text-3xl filled">
             electric_bolt
           </span>
           <span className="text-2xl font-black text-slate-900 tracking-tighter font-headline">
@@ -36,8 +36,8 @@ export default function Header() {
               className={cn(
                 'font-headline transition-colors',
                 isActive(item.href)
-                  ? 'text-blue-600 font-semibold'
-                  : 'text-slate-600 hover:text-blue-600'
+                  ? 'text-orange-700 font-semibold'
+                  : 'text-slate-600 hover:text-orange-700'
               )}
             >
               {item.label}
@@ -53,7 +53,7 @@ export default function Header() {
 
         {/* Mobile Toggle */}
         <button
-          className="md:hidden text-slate-900 p-2 hover:bg-blue-50 rounded-lg"
+          className="md:hidden text-slate-900 p-2 hover:bg-orange-50 rounded-lg"
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label="Toggle menu"
         >
@@ -78,7 +78,7 @@ export default function Header() {
             className={cn(
               'font-headline py-2',
               isActive(item.href)
-                ? 'text-blue-600 font-semibold'
+                ? 'text-orange-700 font-semibold'
                 : 'text-slate-600'
             )}
           >
