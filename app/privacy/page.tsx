@@ -17,7 +17,7 @@ export default function PrivacyPage() {
         Last updated: June 1, 2026
       </p>
 
-      <div className="prose prose-slate max-w-none space-y-6 text-on-surface-variant leading-relaxed">
+      <div className="prose prose-stone max-w-none space-y-6 text-on-surface-variant leading-relaxed">
         <section>
           <h2 className="font-headline text-2xl font-bold text-on-surface mb-3">
             Information We Collect
